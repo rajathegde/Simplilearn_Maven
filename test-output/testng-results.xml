@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5529" started-at="2021-11-09T04:36:32Z" finished-at="2021-11-09T04:36:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5529" started-at="2021-11-09T04:36:32Z" finished-at="2021-11-09T04:36:38Z">
+      <class name="test.LoginTest">
+        <test-method status="PASS" signature="ReportSetup()[pri:0, instance:test.LoginTest@28ac3dc3]" name="ReportSetup" is-config="true" duration-ms="125" started-at="2021-11-09T04:36:32Z" finished-at="2021-11-09T04:36:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportSetup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.LoginTest@28ac3dc3]" name="setup" is-config="true" duration-ms="1661" started-at="2021-11-09T04:36:32Z" finished-at="2021-11-09T04:36:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ExcelLogin()[pri:0, instance:test.LoginTest@28ac3dc3]" name="ExcelLogin" duration-ms="3329" started-at="2021-11-09T04:36:34Z" finished-at="2021-11-09T04:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelLogin -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.LoginTest@28ac3dc3]" name="teardown" is-config="true" duration-ms="72" started-at="2021-11-09T04:36:37Z" finished-at="2021-11-09T04:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="FAIL" signature="negetivelogin(java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@28ac3dc3]" name="negetivelogin" duration-ms="0" started-at="2021-11-09T04:36:38Z" finished-at="2021-11-09T04:36:38Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'UserName' is required by @Test on method negetivelogin but has not been marked @Optional or defined
+in /tmp/testng-eclipse-500262567/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'UserName' is required by @Test on method negetivelogin but has not been marked @Optional or defined
+in /tmp/testng-eclipse-500262567/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negetivelogin -->
+        <test-method status="FAIL" signature="positivelogin(java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@28ac3dc3]" name="positivelogin" duration-ms="0" started-at="2021-11-09T04:36:38Z" finished-at="2021-11-09T04:36:38Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'UserName' is required by @Test on method positivelogin but has not been marked @Optional or defined
+in /tmp/testng-eclipse-500262567/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'UserName' is required by @Test on method positivelogin but has not been marked @Optional or defined
+in /tmp/testng-eclipse-500262567/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positivelogin -->
+        <test-method status="PASS" signature="ReportTearDown()[pri:0, instance:test.LoginTest@28ac3dc3]" name="ReportTearDown" is-config="true" duration-ms="300" started-at="2021-11-09T04:36:38Z" finished-at="2021-11-09T04:36:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportTearDown -->
+      </class> <!-- test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
